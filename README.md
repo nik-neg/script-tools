@@ -4,7 +4,7 @@
 
 - to create a `react` component folder with an `index.ts, types.ts, {componentName}.tsx, and {componentName}.styles.ts` run 
 
-chmod +x `create-component-folder.sh`
+`chmod +x create-component-folder.sh`
 
 `./create-component-folder.sh` {componentName}
 
