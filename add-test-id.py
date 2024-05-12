@@ -51,6 +51,6 @@ def add_data_test_id_to_files(path):
                 with open(full_path, 'w', encoding='utf-8') as f:
                     f.write(updated_content)
 
-# Path to the 'src' directory of your React project
+# Path to the 'src' directory of your React components
 src_path = '../client/src'
 add_data_test_id_to_files(src_path)
