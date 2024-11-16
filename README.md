@@ -1,4 +1,4 @@
-# Client Automation Helper
+# script-tools
 
 This repository contains various automation scripts and tools designed to streamline and accelerate the development process for React applications. These tools include utilities for creating React components, managing context with reducers, and enhancing development workflows.
 
