@@ -20,7 +20,7 @@ def add_action_to_reducer(name, action_name):
         reducer_code = file.read()
 
     # Create the action enum case and reducer case
-    new_enum_case = f"    {formatted_action_name} = '{formatted_action_name}'"
+    new_enum_case = f"    {formatted_action_name} = '{formatted_action_name}',"
     new_reducer_case = f"        case {action_enum_name}.{formatted_action_name}:\n            // Handle {formatted_action_name} action\n            return state;"
 
     # Check and add the action to the enum if it doesn't exist already
@@ -41,7 +41,7 @@ def add_action_to_reducer(name, action_name):
 
 def main():
     name = input("Enter the name of the context component (e.g., 'apple'): ").strip()
-    action_name = input("Enter the name of the action to add (e.g., 'removeApple'): ").strip()
+    action_name = input("Enter the name of the action to add (e.g., 'remove apple'): ").strip()
 
     if not name or not action_name:
         print("Error: Name and action cannot be empty!")
