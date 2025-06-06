@@ -6,7 +6,7 @@ This repository contains various automation scripts and tools designed to stream
 
 - **`client-automation-helper`**: adds test-ids to components
 
-- **`create_react_component_folder`**: Automates the creation of a new React component folder, including essential files like `index.ts`, component `.tsx`, `.styles.ts`, and `types.ts`. This script helps you quickly scaffold a React component with proper structure.**
+- **`create_react_component_folder`**: Automates the creation of a new React component folder, including essential files like `index.ts`, component `.tsx`, `.styles.ts`, and `types.ts`. This script helps you quickly scaffold a React component with proper structure.\*\*
 
 - **`react-context`**: Generates the necessary files for a new React context, including a context provider, reducer, and TypeScript types. It allows you to easily set up a new context with state management via `useReducer`.
 
@@ -23,4 +23,18 @@ This repository contains various automation scripts and tools designed to stream
 For automating React component folder creation, you can run the following:
 
 ```bash
+# Create component with default naming
 ./create_react_component_folder.sh <folder_name>
+
+# Create component with kebab case file naming
+./create_react_component_folder.sh -k <folder_name>
+# or
+./create_react_component_folder.sh --kebab <folder_name>
+```
+
+The script will create a new folder with the following structure:
+
+- `index.ts` - Exports all component files
+- `<component_name>.tsx` - The main component file
+- `<component_name>.styles.ts` - Styled components using MUI
+- `types.ts` - TypeScript interfaces and types
