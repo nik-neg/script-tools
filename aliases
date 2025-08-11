@@ -17,6 +17,9 @@ alias dst="docker stats"
 alias dlogs="docker logs"
 alias dbuild="docker build -t"
 
+alias v='vim ~/.zshrc'
+alias dcu='docker compose up'
+
 alias k="kubectl"
 alias kgp="kubectl get pods"
 alias kgs="kubectl get svc"
